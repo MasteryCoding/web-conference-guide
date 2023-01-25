@@ -130,17 +130,54 @@ For `text-align` choose from:
 - `left`
 - `right`
 
+### Step 3: A Splash of Color
 
+#### Find a Background Color
 
+Colors in CSS are represented in many ways. The easiest way to describe a color is using a color picker. Google has a color picker built in if you search "color picker". 
 
+![Google color picker](https://user-images.githubusercontent.com/13992684/214694805-5f8aa2bd-4170-4006-ac59-8c78cdef35f9.png)
 
+We are going to select a background for our page, use the color picker to find a color you like and copy the hex code e.g. `#ffcd17`. Now we can use it in our CSS to change the background of our website. 
 
+To access the background, we can use the `body` selector and set its `background-color` to the color you picked.
 
+#### CSS
 
+```css
+body {
+  background-color: #f2b611;
+}
 
+h1 {
+ font-family: sans-serif;
+ text-align: center;
+}
+```
 
+![Changing the background color](https://user-images.githubusercontent.com/13992684/214695218-9ac0efce-16d0-45c1-807c-652d940ac182.png)
 
+### Step 4: Make Your Heading Pop!
 
+When you write text, it's important to have a high contrast with the background so its easy to read. Since our text is black, we can make the heading pop by giving it a white background and making it look like its in a banner. We can do this by setting four properties. Try adding them one at a time and see what they do.
 
+#### CSS
 
+```css
+body {
+  background-color: #f2b611;
+}
+
+h1 {
+ font-family: sans-serif;
+ text-align: center;
+  
+ background-color: white;
+ padding: 16px;
+ margin: 16px;
+ border-radius: 8px;
+}
+```
+
+![Heading styled as a banner](https://user-images.githubusercontent.com/13992684/214696409-5868a994-cd7d-4bfc-afc9-af1a27c85248.png)
 
