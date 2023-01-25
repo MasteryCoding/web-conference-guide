@@ -181,3 +181,90 @@ h1 {
 
 ![Heading styled as a banner](https://user-images.githubusercontent.com/13992684/214696409-5868a994-cd7d-4bfc-afc9-af1a27c85248.png)
 
+### Step 5: Adding Media
+
+A site with only text can be a little boring. By adding media like images we can add variety and engagement to the page. Find an image on the web and copy the link to the url. Try to find an image that fits in with the background color you chose.
+
+Be sure that you don't just copy the link to the website. To do this, find the image you want to use and click "Copy Image Address".
+
+![image](https://user-images.githubusercontent.com/13992684/214703551-eac52121-aeec-4604-9c87-7f26816addb3.png)
+
+Once you have it in your clipboard, you can paste it into the `src` attribute of an `img` tag in your html.
+
+#### HTML
+
+```html
+<h1>My First Webpage</h1>
+<img src="https://paste-your-image-link-here.jpg" />
+```
+
+Your image may be way too large for the page or much too small. But we can fix that by adding this block to your CSS.
+
+#### CSS
+
+```css
+img {
+  width: 300px;
+  height: 300px;
+  
+  display: block;
+  margin: auto;
+  
+  padding: 16px;
+  background-color: white;
+}
+```
+
+The CSS above does three things.
+1. Use `width` and `height` properties to set the size of the image. (Feel free to tweak these numbers and see what happens).
+2. Use `display: block;` and `margin: auto` to center the image on the page. (This is covered in greater detail in the full course).
+3. Use `padding` and `background-color` properties to add a frame to the image.
+
+#### Result
+
+![image](https://user-images.githubusercontent.com/13992684/214705856-62306c8d-0408-4869-8582-13f7ca77e4cd.png)
+
+### Review
+
+In only a few minutes, you've used two coding languages to create your first webpage. Here is an example of what your final code could look like.
+
+#### HTML
+
+```html
+<h1>My First Webpage</h1>
+<img src="https://user-images.githubusercontent.com/13992684/214703816-71331bdc-ca1f-4723-a66d-c2219dc27928.png" />
+```
+
+#### CSS
+
+```css
+body {
+  background-color: #E3A81D;
+}
+h1 {
+ font-family: sans-serif;
+ text-align: center;
+  
+ background-color: white;
+ padding: 16px;
+ margin: 16px;
+ border-radius: 8px;
+}
+img {
+  width: 300px;
+  height: 300px;
+  
+  display: block;
+  margin: auto;
+  
+  padding: 16px;
+  background-color: white;
+}
+```
+
+
+
+
+
+
+
